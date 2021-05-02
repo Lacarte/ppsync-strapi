@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "requests",
+  "info": {
+    "name": "request",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstname": {
+      "type": "string",
+      "required": true
+    },
+    "lastname": {
+      "type": "string",
+      "required": true
+    },
+    "form_id": {
+      "type": "string",
+      "required": true
+    },
+    "passport_number": {
+      "type": "string"
+    },
+    "civil_right": {
+      "type": "enumeration",
+      "enum": [
+        "major",
+        "minor"
+      ]
+    },
+    "request_date": {
+      "type": "datetime"
+    },
+    "nif": {
+      "type": "string"
+    },
+    "state": {
+      "type": "enumeration",
+      "enum": [
+        "active",
+        "canceled",
+        "abdandoned"
+      ]
+    },
+    "suggestions": {
+      "type": "text"
+    },
+    "resquest_motive_id": {
+      "model": "resquest-motive"
+    },
+    "user_id": {
+      "plugin": "admin",
+      "model": "user"
+    },
+    "filler_id": {
+      "plugin": "admin",
+      "model": "user"
+    }
+  }
+}

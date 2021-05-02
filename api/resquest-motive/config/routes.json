@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/resquest-motives",
+      "handler": "resquest-motive.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/resquest-motives/count",
+      "handler": "resquest-motive.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/resquest-motives/:id",
+      "handler": "resquest-motive.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/resquest-motives",
+      "handler": "resquest-motive.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/resquest-motives/:id",
+      "handler": "resquest-motive.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/resquest-motives/:id",
+      "handler": "resquest-motive.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
