@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "request_statuses",
+  "collectionName": "doctypes",
   "info": {
-    "name": "request-status",
-    "description": ""
+    "name": "doctype"
   },
   "options": {
     "increments": true,
@@ -23,9 +22,7 @@
         "actif",
         "inactif",
         "eliminer"
-      ],
-      "default": "actif",
-      "required": true
+      ]
     }
   }
 }
