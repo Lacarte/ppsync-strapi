@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "document_types",
+  "collectionName": "request_motives",
   "info": {
-    "name": "document-type",
+    "name": "request-motive",
     "description": ""
   },
   "options": {
@@ -15,18 +15,16 @@
     "description": {
       "type": "string",
       "required": true,
-      "maxLength": 64,
-      "minLength": 3,
       "unique": true
     },
     "state": {
       "type": "enumeration",
       "enum": [
-        "active",
-        "inactive",
-        "cancel"
+        "actif",
+        "inactif",
+        "eliminer"
       ],
-      "default": "active",
+      "default": "actif",
       "required": true,
       "unique": true
     }

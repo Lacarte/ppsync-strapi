@@ -1188,9 +1188,7 @@
         "required": [
           "id",
           "username",
-          "email",
-          "firstName",
-          "lastName"
+          "email"
         ],
         "properties": {
           "id": {
@@ -1252,49 +1250,13 @@
                 "type": "string"
               }
             }
-          },
-          "logs": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "logout_at": {
-                  "type": "string"
-                },
-                "user_id": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "firstName": {
-            "type": "string"
-          },
-          "lastName": {
-            "type": "string"
           }
         }
       },
       "NewUsersPermissionsUser": {
         "required": [
           "username",
-          "email",
-          "firstName",
-          "lastName"
+          "email"
         ],
         "properties": {
           "username": {
@@ -1328,18 +1290,6 @@
             "default": false
           },
           "role": {
-            "type": "string"
-          },
-          "logs": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "firstName": {
-            "type": "string"
-          },
-          "lastName": {
             "type": "string"
           },
           "created_by": {

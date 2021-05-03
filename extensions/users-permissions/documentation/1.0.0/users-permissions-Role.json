@@ -528,9 +528,7 @@
               "required": [
                 "id",
                 "username",
-                "email",
-                "firstName",
-                "lastName"
+                "email"
               ],
               "properties": {
                 "id": {
@@ -561,18 +559,6 @@
                   "type": "boolean"
                 },
                 "role": {
-                  "type": "string"
-                },
-                "logs": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "firstName": {
-                  "type": "string"
-                },
-                "lastName": {
                   "type": "string"
                 },
                 "created_by": {
