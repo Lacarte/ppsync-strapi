@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "request_statuses",
+  "info": {
+    "name": "request-status",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "state": {
+      "type": "enumeration",
+      "enum": [
+        "actif",
+        "inactif",
+        "eliminer"
+      ],
+      "default": "actif",
+      "required": true
+    }
+  }
+}
