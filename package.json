@@ -5,6 +5,7 @@
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
+    "debug": "nodemon --inspect=0.0.0.0:9229 develop.js",
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi"
@@ -34,5 +35,8 @@
     "node": ">=10.16.0 <=14.x.x",
     "npm": "^6.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
 }

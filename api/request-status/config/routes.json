@@ -47,6 +47,14 @@
       "config": {
         "policies": []
       }
+    },
+    {
+      "method": "GET",
+      "path": "/request-statuses/testcount",
+      "handler": "request-status.testcount",
+      "config": {
+        "policies": []
+      }
     }
   ]
 }
