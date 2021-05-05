@@ -6,13 +6,4 @@
  */
 
 module.exports = {
-
-  testcount: async (ctx,next) => {
-    //const count = await strapi.services['request-status'].count(ctx.query);
-    //return { count, foo: 'bar' };
-
-    console.log("asdadasdasd")
-    await next();
-  },
-
 };
